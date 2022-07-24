@@ -1,0 +1,44 @@
+<div class="container">
+    <i class="fa-solid fa-arrow-left voltar"></i>
+
+    <h1 class="titulo">Login</h1>
+
+    <form>
+        <!-- <div class="linha">
+                <select id="tipoLogin">
+                    <option value="">Tipo de Login</option>
+                    <option value="1">Nome</option>
+                    <option value="2">CPF</option>
+                </select>
+                
+            </div> -->
+
+        <!-- <div class="linha">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="cpf" placeholder="cpf" disabled>
+            </div> -->
+        <div class="linha">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="nome" name="id" placeholder=" Seu id" [(ngModel)]="novoUsuraio.id"
+                placeholder="seu nome">
+        </div>
+
+        <div class="linha">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="imail" id="usuario" name="usuario" [(ngModel)]="novoUsuraio.usuario" placeholder="seu e-mail">
+        </div>
+
+        <div class="linha">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" name="senha" [(ngModel)]="novoUsuraio.senha" placeholder="*****">
+        </div>
+
+
+        <p class="mensagem"></p>
+
+
+        <button class="signin" type="button">Sign in</button>
+
+
+    </form>
+</div>
